@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/LLNH1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/default_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="120dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="Defaults"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/large"
+                    tools:ignore="RtlCompat" />
+
+                <Switch
+                    android:id="@+id/savealock_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical|end"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:freezesText="?android:attr/windowSwipeToDismiss"
+                    android:gravity="fill_horizontal|end"
+                    android:layoutDirection="inherit"
+                    android:showText="false"
+                    android:text="Save&amp;Lock"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/lock" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLNV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LLNH1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lN1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/media_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Media : "
+                        android:textSize="@dimen/small" />
+
+                    <SeekBar
+                        android:id="@+id/media_sbar_N"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:max="15" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lN2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/ring_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Ring   :  "
+                        android:textSize="@dimen/small" />
+
+                    <SeekBar
+                        android:id="@+id/ring_sbar_N"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:max="7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lN3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/alarm_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Alarm : "
+                        android:textSize="@dimen/small" />
+
+                    <SeekBar
+                        android:id="@+id/alarm_sbar_N"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:max="7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lN4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:foregroundGravity="right"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Switch
+                        android:id="@+id/vibrate_sw_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical|end"
+                        android:layout_weight="0"
+                        android:freezesText="?android:attr/windowSwipeToDismiss"
+                        android:gravity="fill_horizontal|end"
+                        android:layoutDirection="inherit"
+                        android:showText="false"
+                        android:text="Vibrate for calls"
+                        android:textAlignment="textEnd"
+                        android:textSize="@dimen/small" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardV1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingAction_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/baseline_add_24"
+        app:useCompatPadding="true" />
+
+
+</RelativeLayout>

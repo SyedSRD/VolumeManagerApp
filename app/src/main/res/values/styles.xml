@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#404040</item>
+        <item name="colorPrimaryDark">#101010</item>
+        <item name="colorAccent">#1979BF</item>
+        <!--<item name="android:textColorPrimary">#C0C0C0</item>
+        <item name="android:textColorSecondary">#202020</item>
+        <item name="android:colorPrimary">#C0C0C0</item>
+        <item name="android:colorPrimaryDark">#202020</item>-->
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button.Custom</item>
+        <item name="android:buttonStyle">@style/AppTheme.AppTheme.ButtonColor</item>
+<!--        <item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>-->
+
+
+        <!--<item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>-->
+    </style>
+    <style name="TextAppearance.AppCompat.Button.Custom">
+        <item name="android:textColor">#A9A9A9</item>
+    </style>
+    <style name="AppTheme.AppTheme.ButtonColor" parent="@style/Widget.AppCompat.Button">
+        <!--<item name="android:colorPrimary">#FFFFFF</item>
+        <item name="android:colorPrimaryDark">#000000</item>-->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#000000</item>
+    </style>
+
+    <style name="AppTheme.ToggleButton" parent="Base.Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/design_default_color_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="MyToggle" parent="@android:style/Widget.Material.Light.Button.Toggle">
+        <item name="android:textColorPrimary">#d84315</item>
+        <item name="colorAccent">#0288d1</item>
+        <item name="android:colorControlNormal">#f9a825</item>
+        <item name="android:colorControlHighlight">#880e4f</item>
+        <item name="android:colorButtonNormal">#b9f6ca</item>
+    </style>
+</resources>

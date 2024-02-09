@@ -1,0 +1,2 @@
+com/example/volumemanager/BuildConfig.java
+ com.example.volumemanager.BuildConfig

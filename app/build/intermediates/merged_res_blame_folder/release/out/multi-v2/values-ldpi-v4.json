@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\syed\\AndroidStudioProjects\\VolumeManager\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ldpi-v4\\values-ldpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\syed\\AndroidStudioProjects\\VolumeManager\\app\\src\\main\\res\\values-ldpi\\dimension.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,95,132",
+                        "endColumns": "36,35,36",
+                        "endOffsets": "89,126,164"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,92,128",
+                        "endColumns": "36,35,36",
+                        "endOffsets": "87,123,160"
+                    }
+                }
+            ]
+        }
+    ]
+}

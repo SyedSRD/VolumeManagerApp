@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Volume Manager</string>
+    <string name="choose_theme_text" >Select Theme</string>
+    <string name="normal">Normal</string>
+    <string name="start">Start :</string>
+    <string name="end">End :</string>
+    <string name="_07_30_pm">07:30 pm</string>
+    <string name="_08_30_am">08:30 am</string>
+    <string name="media">Media :</string>
+    <string name="ring">Ring :</string>
+    <string name="alarm">Alarm :</string>
+    <string name="vibrate_for_calls">Vibrate for calls</string>
+    <string name="just_vibrate">Just Vibrate</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="repeat">Repeat</string>
+    <string name="sun">S</string>
+    <string name="mon">M</string>
+    <string name="tue">T</string>
+    <string name="wed">W</string>
+    <string name="thu">T</string>
+    <string name="fri">F</string>
+    <string name="sat">S</string>
+    <string name="delete">Delete</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+</resources>
